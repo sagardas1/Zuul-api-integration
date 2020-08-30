@@ -11,14 +11,14 @@ import com.microService2.dto.UserDetails;
 import com.microService2.service.Service;
 
 @RestController
-@RequestMapping("/m2")
+//@RequestMapping("/m2")
 public class Controller {
 	@Autowired
 	Service service;
 	
-	@PostMapping(value="/user")
+	@PostMapping(value="/user", headers = "Accept=application/json")
 	public UserDetails getName(@RequestBody UserDetails userDetails) {
-		return service.getName(userDetails);
+		return userDetails;
 		
 	
 	}

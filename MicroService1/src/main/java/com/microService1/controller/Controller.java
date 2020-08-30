@@ -11,19 +11,22 @@ import com.microService1.dto.UserDetails;
 import com.microService1.service.Service;
 
 @RestController
-@RequestMapping("/m1")
+//@RequestMapping("/m1")
 public class Controller {
 	@Autowired
 	Service service;
+	//
 	
-	@PostMapping("/getName")
+	//http://localhost:8080/consumer/getName
+	@PostMapping(value="/getName", headers = "Accept=application/json")
 	public UserDetails getName(@RequestBody UserDetails userDetails) {
 		return	service.getName(userDetails);
 		
 	}
+	
 	@GetMapping("/test")
 	public String test() {
-		return "sagar";
+		return "m1";
 	}
 
 }
