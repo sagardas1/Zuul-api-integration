@@ -12,10 +12,10 @@ public class Service {
 	@Autowired
 	RestTemplate getRestTemplate;
 
-	public String getName(UserDetails userDetails) {
+	public UserDetails getName(UserDetails userDetails) {
 		System.out.println("microservice 22222");
 		System.out.println(new Gson().toJson(userDetails));
-		return "m2";
+		return userDetails;
 	}
 
 }
