@@ -15,7 +15,7 @@ public class Controller {
 	@Autowired
 	Service service;
 	
-	@PostMapping(value="/user",headers="Accept=application/json")
+	@PostMapping(value="/user")
 	public String getName(@RequestBody UserDetails userDetails) {
 		service.getName(userDetails);
 		return "m2";
