@@ -12,7 +12,7 @@ public class MicroService2Application {
 
 	
 	@Bean
-	public RestTemplate getRestTemplet() {
+	public RestTemplate getRestTemplate() {
 		 return new RestTemplate();
 	 }
 	public static void main(String[] args) {

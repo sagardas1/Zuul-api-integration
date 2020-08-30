@@ -13,7 +13,8 @@ public class Service {
 
 	public String getName(UserDetails userDetails) {
 		// TODO Auto-generated method stub
-	return	getRestTemplate.postForObject("http://localhost:8091/m2/user", UserDetails.class, String.class);
+	String g=(String)getRestTemplate.postForObject("http://MicroService2/m2/user", UserDetails.class, String.class);
+	return g;
 	}
 
 }
