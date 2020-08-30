@@ -27,6 +27,7 @@ public class Controller {
 	
 	@GetMapping("/test")
 	public String test() {
+		
 		return "m1";
 	}
 
