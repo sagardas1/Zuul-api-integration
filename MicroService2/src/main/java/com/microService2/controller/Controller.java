@@ -1,6 +1,7 @@
 package com.microService2.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,9 +17,13 @@ public class Controller {
 	Service service;
 	
 	@PostMapping(value="/user")
-	public String getName(@RequestBody UserDetails userDetails) {
-		service.getName(userDetails);
+	public UserDetails getName(@RequestBody UserDetails userDetails) {
+		return service.getName(userDetails);
 		
+	
+	}
+	@GetMapping("/test")
+	public String test() {
 		return "m2";
 	}
 
