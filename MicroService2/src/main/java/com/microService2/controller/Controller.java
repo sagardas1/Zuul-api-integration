@@ -18,6 +18,7 @@ public class Controller {
 	@PostMapping(value="/user")
 	public String getName(@RequestBody UserDetails userDetails) {
 		service.getName(userDetails);
+		
 		return "m2";
 	}
 
