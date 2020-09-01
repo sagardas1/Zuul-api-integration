@@ -12,6 +12,5 @@ public class BulkUserDetails {
 	public void setBulk(List<UserDetails> bulk) {
 		this.bulk = bulk;
 	}
-	
 
 }
