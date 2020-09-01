@@ -13,7 +13,7 @@ public class MicroService1Application {
 
 	@LoadBalanced
 	@Bean
-	public RestTemplate getRestTemplate(){
+	 RestTemplate getRestTemplate(){
 		return new RestTemplate();
 	}
 	public static void main(String[] args) {
