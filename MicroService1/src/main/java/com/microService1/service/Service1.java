@@ -16,7 +16,6 @@ public class Service1 {
 
 	public String getName(UserDetails userDetails) {
 		int i = 1;
-		System.out.println("m1 service");
 		if (i == 0) {
 			return null;
 		}
