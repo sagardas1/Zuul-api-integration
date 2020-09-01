@@ -9,7 +9,7 @@ import com.microService2.dto.UserDetails;
 
 @Service
 public class Service1 {
-	
+
 	@Autowired
 	RestTemplate getRestTemplate;
 
@@ -19,5 +19,3 @@ public class Service1 {
 	}
 
 }
-
-
