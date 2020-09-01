@@ -20,7 +20,6 @@ public class Controller1 {
 	Service1 service1;
 	//
 	
-	//http://localhost:8080/consumer/getName
 	@PostMapping(value="/getName", headers = "Accept=application/json")
 	public String getName(@RequestBody UserDetails userDetails) {
 		return	service1.getName(userDetails);
