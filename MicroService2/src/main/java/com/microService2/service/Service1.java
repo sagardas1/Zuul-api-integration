@@ -14,7 +14,6 @@ public class Service1 {
 	RestTemplate getRestTemplate;
 
 	public UserDetails getName(UserDetails userDetails) {
-		System.out.println("microservice 22222");
 		System.out.println(new Gson().toJson(userDetails));
 		return userDetails;
 	}
