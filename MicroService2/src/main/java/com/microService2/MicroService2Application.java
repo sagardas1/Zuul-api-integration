@@ -14,8 +14,9 @@ public class MicroService2Application {
 	@LoadBalanced
 	@Bean
 	public RestTemplate getRestTemplate() {
-		 return new RestTemplate();
-	 }
+		return new RestTemplate();
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(MicroService2Application.class, args);
 	}
