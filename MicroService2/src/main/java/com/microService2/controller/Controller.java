@@ -15,14 +15,14 @@ import com.microService2.service.Service1;
 public class Controller {
 	@Autowired
 	Service1 service1;
-	
-	@PostMapping(value="/user", headers = "Accept=application/json")
+
+	@PostMapping(value = "/user", headers = "Accept=application/json")
 	public UserDetails getName(@RequestBody UserDetails userDetails) {
 		System.out.println("in m2");
 		return userDetails;
-		
-	
+
 	}
+
 	@GetMapping("/test")
 	public String test() {
 		return "m2";
