@@ -16,7 +16,6 @@ public class MicroService2Application {
 	public RestTemplate getRestTemplate() {
 		return new RestTemplate();
 	}
-	
 
 	public static void main(String[] args) {
 		SpringApplication.run(MicroService2Application.class, args);
