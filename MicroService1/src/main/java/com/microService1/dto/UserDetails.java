@@ -4,6 +4,7 @@ public class UserDetails {
 
 	private String name;
 	private int redgNo;
+	
 
 	public String getName() {
 		return name;
