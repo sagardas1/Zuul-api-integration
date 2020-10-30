@@ -13,7 +13,7 @@ import com.microService1.service.Service1;
 @RestController
 @RequestMapping("/m1")
 public class Controller1 {
-	
+
 	@Autowired
 	Service1 service1;
 
@@ -22,7 +22,6 @@ public class Controller1 {
 		return service1.getName(userDetails);
 
 	}
-	
 
 	@GetMapping("/test")
 	public String test() {
